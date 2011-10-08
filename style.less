@@ -2,6 +2,16 @@
 @accent: #ed1f24;
 @note: #fcbd00;
 
+.box-shadow (@x: 2px, @y: 2px, @blur: 2px, @alpha:0.5 ) {
+  @val: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow:         @val;
+  -webkit-box-shadow: @val;
+  -moz-box-shadow:    @val;
+}
+.text-shadow {
+	text-shadow: 1px 1px 1px #999;
+}
+
 html {
 	background: #EEE;
 	}
@@ -12,14 +22,16 @@ body {
 	font-size: larger;
 	font-family: 'Droid Sans', sans-serif;
 	background:#FFF;
-	color: #222;
+	color: #555;
 	overflow:auto;
+	.box-shadow;
 	}
 
 h1 {
 	font-family: 'Neucha', cursive;
 	float:left;
-
+	.text-shadow;
+	color: #555;
 	a {
 		color: @base;
 		text-decoration: none;
@@ -27,11 +39,15 @@ h1 {
 			color: @accent;
 		}
 	}
+	span {
+		color: @base;
+	}
 }
 .twitter {
 	clear:both;
 	float:right;
 	}
+	
 .rules {
 	clear:left;
 	margin-right: 260px;
@@ -43,6 +59,7 @@ h1 {
 	padding:10px;
 	.box-shadow;
 	h2 a {
+		.text-shadow;
 		margin: 0px; padding:0px;
 		color: @base;
 		text-decoration:none;
@@ -55,6 +72,7 @@ h1 {
 	clear:both;
 	
 	.description {
+		.text-shadow;
 		font-size:xx-large;
 		color: @accent;
 	}
@@ -66,22 +84,18 @@ h1 {
 	float:right;
 	margin:10px;
 	}
-.box-shadow (@x: 2px, @y: 2px, @blur: 2px, @alpha:0.7 ) {
-  @val: @x @y @blur rgba(0, 0, 0, @alpha);
-  box-shadow:         @val;
-  -webkit-box-shadow: @val;
-  -moz-box-shadow:    @val;
-}
+
 .note {
 	padding:10px;
 	background: @note;
 	color:white;
 	text-align:center;
+	.box-shadow;
 	a {
 		color: @accent;
 		text-decoration:none;
 		&:hover {
 			text-decoration:underline;
 		}
-}
+	}
 }

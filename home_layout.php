@@ -6,7 +6,7 @@
   </head>
   <body>
 
-  <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - Inicio</h1>
+  <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>Inicio</span></h1>
 	<!-- AddThis Button BEGIN -->
 	<div class="addthis_toolbox addthis_default_style ">
 	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
