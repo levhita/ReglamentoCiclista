@@ -5,7 +5,10 @@
 	<?php include 'headers.php'; ?>
   </head>
   <body>
-    <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>#<?=$rule['number']?> <?=$rule['name']?></span></h1>
+    <div class="header">
+      <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>#<?=$rule['number']?> <?=$rule['name']?></span></h1>
+      <div class="slogan">Para un ciclismo más seguro y una convivencia más amena.</div>
+  	</div>
 	<!-- AddThis Button BEGIN -->
 	<div class="addthis_toolbox addthis_default_style ">
 	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>

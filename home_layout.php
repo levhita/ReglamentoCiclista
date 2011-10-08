@@ -5,8 +5,11 @@
 	<?php include 'headers.php'; ?>
   </head>
   <body>
+  <div class="header">
+    <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>Inicio</span></h1>
+    <div class="slogan">Para un ciclismo más seguro y una convivencia más amena.</div>
+  </div>
 
-  <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>Inicio</span></h1>
 	<!-- AddThis Button BEGIN -->
 	<div class="addthis_toolbox addthis_default_style ">
 	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
