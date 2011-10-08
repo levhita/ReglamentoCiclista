@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>#ReglamentoCiclista - <?=$rule['name']?></title>
+    <title>#ReglamentoCiclista - #<?=$rule['number']?> <?=$rule['name']?></title>
 	<?php include 'headers.php'; ?>
   </head>
   <body>
-    <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span><?=$rule['name']?></span></h1>
+    <h1><a href="<?= web_root ?>" title="Inicio">#ReglamentoCiclista</a> - <span>#<?=$rule['number']?> <?=$rule['name']?></span></h1>
 	<!-- AddThis Button BEGIN -->
 	<div class="addthis_toolbox addthis_default_style ">
 	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
