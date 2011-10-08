@@ -9,7 +9,7 @@
         title: '#ReglamentoCiclista',
         subject: 'Reglamento Ciclista',
         width: 250,
-        height: 500,
+        height: 450,
         theme: {
           shell: {
             background: '#c9c9c9',
