@@ -15,6 +15,7 @@
 	</div>
 	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e906de04dcb0610"></script>
 	<!-- AddThis Button END -->
+    
     <div class="rule_detail">
       <p class="description"><?=$rule['description']?></p>
       <?php
@@ -30,10 +31,12 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname  = 'reglamentociclista'; // required: replace example with your forum shortname
+          var disqus_shortname  = '<?=disqus_shortname?>'; // required: replace example with your forum shortname
           var disqus_identifier = '<?=$rule['id']?>';
           var disqus_url = 'http://reglamentocliclista.levhita.net/regla/<?=$rule['id']?>/';
           
+          <?= (production)?"":"var disqus_developer = 1;"?>
+
           /* * * DON'T EDIT BELOW THIS LINE * * */
           (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -44,18 +47,7 @@
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26200124-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    <?php include 'google_analytics.php' ?>
+  
   </body>
 </html>

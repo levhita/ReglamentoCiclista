@@ -15,7 +15,7 @@
 	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
 	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e906de04dcb0610"></script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=<?=pubid?>"></script>
 	<!-- AddThis Button END -->
 
   <div class="twitter"> 
@@ -64,18 +64,6 @@
   
   <p class="note">Usa el hashtag para proponer reglas al <a href="https://twitter.com/#!/search?q=%23ReglamentoCiclista">#ReglamentoCiclista</a></p>
 
-	<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26200124-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+  <?php include 'google_analytics.php' ?>
   </body>
 </html>
