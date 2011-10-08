@@ -3,7 +3,6 @@
   <head>
     <title>#ReglamentoCiclista - Inicio</title>
 	<?php include 'headers.php'; ?>
-	<script src="http://widgets.twimg.com/j/2/widget.js"></script>
   </head>
   <body>
 
@@ -17,42 +16,7 @@
 	</div>
 	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=<?=pubid?>"></script>
 	<!-- AddThis Button END -->
-
-  <div class="twitter"> 
-    <script>
-      new TWTR.Widget({
-        version: 2,
-        type: 'search',
-        search: '#ReglamentoCiclista',
-        interval: 30000,
-        title: '#ReglamentoCiclista',
-        subject: 'Reglamento Ciclista',
-        width: 250,
-        height: 500,
-        theme: {
-          shell: {
-            background: '#c9c9c9',
-            color: '#ffffff'
-          },
-          tweets: {
-            background: '#ffffff',
-            color: '#444444',
-            links: '#1985b5'
-          }
-        },
-        features: {
-          scrollbar: false,
-          loop: true,
-          live: true,
-          hashtags: true,
-          timestamp: true,
-          avatars: true,
-          toptweets: true,
-          behavior: 'default'
-        }
-      }).render().start();
-    </script>
-  </div>
+  <?php include 'twitter.php' ?>
 
   <div class="rules">
   <?php
